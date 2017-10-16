@@ -18,6 +18,7 @@ public:
 	Type getMin();
 	void setMax(Type max);
 	Type getMax();
+    Type get();
 
 	virtual bool mouseMoved(ofMouseEventArgs & args);
 	virtual bool mousePressed(ofMouseEventArgs & args);

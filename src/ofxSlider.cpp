@@ -62,6 +62,11 @@ Type ofxSlider<Type>::getMax(){
 }
 
 template<typename Type>
+Type ofxSlider<Type>::get(){
+    return value;
+}
+
+template<typename Type>
 bool ofxSlider<Type>::mouseMoved(ofMouseEventArgs & args){
 	mouseInside = isGuiDrawing() && b.inside(ofPoint(args.x,args.y));
 	return mouseInside;
